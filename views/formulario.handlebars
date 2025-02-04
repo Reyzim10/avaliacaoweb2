@@ -1,21 +1,21 @@
-<main>
-    
-    {{!-- FORMULARIO --}}
-    <div class="container">
-        <div class="row">
-            <div class="col-6 offset-3">
-                <form>
-                    <input type="text" name = "nome" class="form-control" placeholder="Nome">
-                    <input type="number" name = "valor" class="form-control" placeholder="Felefone">
-                    <input type="text" name = "nome" class="form-control" placeholder="E-mail">
-                    <input type="number" nome= "valor" class="form-control" placeholder="Nota">
-                    <input type="text" name = "nome" class="form-control" placeholder="Situação">
-
-                    <input type="submit" class="btn btn-primary" value="Cadastrar">
-                </form>
-            </div>
-           
-        </div>
-    </div>
-
-</main>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Aluno</title>
+</head>
+<body>
+    <h1>Cadastro de Aluno</h1>
+    <form action="/aluno/salvar" method="POST">
+        <label>Nome:</label>
+        <input type="text" name="nome" required><br>
+        <label>Telefone:</label>
+        <input type="text" name="telefone" required><br>
+        <label>Email:</label>
+        <input type="email" name="email" required><br>
+        <label>Nota:</label>
+        <input type="number" name="nota" step="0.01" required><br>
+        <button type="submit">Salvar</button>
+    </form>
+</body>
+</html>

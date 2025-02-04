@@ -24,6 +24,5 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-///ROTAS DO SISTEMA
-
+///ROTAS DO SISTEMA:
 app.listen(5000, ()=> console.log('Servidor Rodando em http://localhost:5000'))
